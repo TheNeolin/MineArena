@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 
-import com.seitzsoftware.game.state.State;
+import com.seitzsoftware.game.game.state.State;
 import com.seitzsoftware.android.simpleandroidgdf.GameMainActivity;
 
 /**

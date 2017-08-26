@@ -11,8 +11,8 @@ import android.view.SurfaceHolder.Callback;
 
 import com.seitzsoftware.framework.util.InputHandler;
 import com.seitzsoftware.framework.util.Painter;
-import com.seitzsoftware.game.state.LoadState;
-import com.seitzsoftware.game.state.State;
+import com.seitzsoftware.game.game.state.LoadState;
+import com.seitzsoftware.game.game.state.State;
 
 /**
  * Created by Kevin on 12/13/2015.

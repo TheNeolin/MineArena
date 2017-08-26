@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Typeface;
+import android.widget.EditText;
 
 /**
  * Created by Kevin on 12/13/2015.
@@ -16,6 +17,7 @@ public class Painter {
     private Rect srcRect;
     private Rect dstRect;
     private RectF dstRectF;
+    private EditText editText;
 
     public Painter(Canvas canvas) {
         this.canvas = canvas;
@@ -36,6 +38,12 @@ public class Painter {
 
     public void drawString(String str, int x, int y) {
         canvas.drawText(str, x, y, paint);
+    }
+
+    public void drawEditText(EditText et, int x, int y) {
+        et.setDrawingCacheEnabled(true);
+        Bitmap b = et.getDrawingCache();
+        canvas.drawBitmap(b,x,y,paint);
     }
 
     public void fillRect(int x, int y, int width, int height) {
